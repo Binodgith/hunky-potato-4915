@@ -1,0 +1,43 @@
+#top_navbar{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+}
+
+#left_div{
+    width: 50%;
+    height: 25px;
+    border: 1px solid whitesmoke;
+    margin-top: 5px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.top_nav_left {
+    color: whitesmoke;
+    margin-left: 60px;
+}
+
+.top_nav_left img{
+    width: 25px;
+   height: 22px;
+  
+   
+
+}
+
+#right_div {
+    width: 30%;
+    height: 25px;
+    border: 1px solid whitesmoke;
+     margin-left: 150px;
+     margin-top: 5px;
+    display: flex;
+}
+
+.top_nav_right{
+    color: whitesmoke;
+    margin-left: 40px;
+}
