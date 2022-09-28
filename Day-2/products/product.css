@@ -1,0 +1,83 @@
+
+  *{
+    font-family: "Apple Color Emoji","Segoe UI Emoji";
+  }
+
+
+  #product_head{
+    border: 1px solid blue;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #total_product{
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+   
+  }
+
+  #sort_div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #sort_div p {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+  }
+
+  #sort_div select {
+     width: 180px;
+     padding: 8px;
+     border: 1px solid lightgray;
+     border-radius: 2px;
+     color:#5d5e5c;
+  }
+
+  #sort_div select option{
+   color: black;
+  }
+
+
+    
+#prod_container{
+    margin: auto;
+    width: 85%;
+    border: 1px solid red;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+#prod_container img {
+   width: 100%;
+   margin-bottom: 4px;
+}
+
+#prod_container h4{
+    padding-left: 4px;
+    font-size: 18px;
+    color: #242428;
+    display:inline;
+}
+
+#prod_container p{
+     color: black;
+     font-size: 13px;
+     margin: 0px;
+     padding-top:5px ; 
+}
+
+.rupee{
+    display:inline;
+    font-weight: normal;
+    color: black;
+}
+
