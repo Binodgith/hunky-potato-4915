@@ -1,0 +1,159 @@
+
+  .hrRuler{
+    background-color:rgb(212, 208, 208);
+    height:1px;   
+   }
+   #cartBody{
+       width:85%;
+       margin:auto;
+       border: 0px solid green;
+   }
+   .countDiv{
+       font-size: 17px;
+       font-weight: 600;
+       border: 0px solid red;
+       
+   }
+   #productContentDiv{
+       display: flex;
+       border:0px solid green;
+       height:auto;
+       margin-top:20px;
+   }
+   #productContentDiv > #products{
+       width:73%;
+       border:0px solid red;
+   }
+   #productContentDiv > #productsAmount{
+       border:0px solid red;
+       width:36.5%; 
+       margin-left:1%;
+   }
+
+   #productsAmount > #pincodeDiv{
+       border: 1px solid rgb(219, 213, 213);
+       padding: 25px 0px 20px 12px;
+   }
+   #pincodeDiv>input{
+       padding:10px 14px 10px 10px;
+       border-radius:5px;
+       border:1px solid rgb(211, 208, 208);
+       margin-left:7%;
+   }
+   #pincodeDiv>button {
+       width:90px;
+       height:37px;
+       padding:8px 5px 9px 5px;
+       margin-left:1%;
+       border-radius:5px;
+       border:1px solid rgb(205, 216, 242);
+       background-color: transparent;
+       color:rgb(192, 207, 244);
+       font-size: 15px;
+       
+   }
+   #offersForYouDiv{
+       height:105px;
+       border:1px solid rgb(219, 213, 213);
+       margin-top:2%;
+   }
+   #offersForYouDiv{
+       display:flex;
+
+   }
+   #offersForYouDiv>#offerImg{
+       width:30%;
+       border:0px solid black;
+       text-align: center;
+       padding-top:20px;
+   }
+   #offersForYouDiv>#offerImg>img{
+       height:80%;
+   }
+   #offersForYouDiv>#offerInfo{
+       width:70%;
+       border:0px solid black;
+       padding:0px 0px 30px 10px;
+       
+   }
+   #offersForYouDiv>#offerInfo>h3{
+       font-size: 17px;
+   }
+   #offersForYouDiv>#offerInfo>p{
+       font-size:15px;
+       width:90%;
+       color:rgb(126, 124, 124)
+   }
+   #SelectBtn{
+       position: absolute;
+       top:236px;
+       right:140px;
+       color:#303AB2;
+   }
+   #SelectBtn:hover{
+       cursor:pointer;
+   }
+   #priceDiv{
+       border: 1px solid rgb(219, 213, 213);
+       height:293px;
+       margin-top:10px;
+       padding:20px;
+   }
+   #priceDiv>p{
+       font-size: 15px;
+   }
+   #priceDiv> .priceNumber1 {
+       position:absolute;
+       top:370px;
+       right:140px;
+       font-weight: 600;
+
+   }
+   #priceDiv> .priceNumber2 {
+       position:absolute;
+       top:405px;
+       right:140px;
+       font-weight: 600;
+
+   }
+   #priceDiv> .priceNumber3 {
+       position:absolute;
+       top:438px;
+       right:140px;
+       font-weight: 600;
+
+   }
+   #priceRuler{
+       background-color: rgb(205, 202, 202);
+       height:1px;
+       margin-top:30px;
+   }
+   #priceDiv>#total{
+       font-size: 20px;
+   }
+   #priceDiv>#totalPrice{
+       position: absolute;
+       top:510px;
+       right:140px;
+       font-size: 20px;
+       font-weight: 600;
+   }
+   #priceDiv>#checkoutBtn{
+       width:100%;
+       height:50px;
+       background-color:#303AB2;
+       font-size: 17px;
+       color:white;
+       border:none;
+   }
+   #priceDiv>#priceNote{
+       background-color: #EFEFEF;
+       font-size:14px;
+       height:40px;
+       margin-top:2%;
+   }
+   #priceDiv>#priceNote>p{
+       width:90%;
+       margin-left:5px;
+       margin-top:19px;
+   }
