@@ -157,3 +157,25 @@
        margin-left:5px;
        margin-top:19px;
    }
+
+   #productDiv{
+    border: 1px solid rgb(219, 213, 213);
+    margin-bottom: 10px;
+    display:flex;
+   }
+   
+   #productDivPart1{
+    width:80%;
+    border: 0px solid red;
+    font-weight: 600;
+   }
+   #productDivPart1>p {
+    margin-top:-1px;
+    margin-left:10px;
+   }
+   #productRuler{
+
+    background-color: black;
+    width:60%;
+    height:1px;
+   }
