@@ -83,38 +83,6 @@ body {
    /* <---------------------------------bottom navbar starts----------------------> */
 
   
-   /* .dropbtn {
-    
-     color:black;
-     margin-top: 20px;
-     background-color: white;
-     font-size: 14px;
-     border: none;
-   }
-   
-   .dropdown {
-     position: relative;
-     display: inline-block;
-   }
-   
-   .dropdown-content {
-     display: none;
-     position: absolute;
-     background-color: #f1f1f1;
-     min-width: 1000px;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-     z-index: 1;
-   } */
-   
-   /* .dropdown-content a {
-     color: black;
-     padding: 12px 16px;
-     text-decoration: none;
-     display: block;
-   }
-   
-   
-   
    .dropdown:hover .dropdown-content {display: block;}
     */
   
@@ -282,9 +250,16 @@ body {
     margin-left: 530px;
 }
 
-#sign{
+#sign h4{
     margin-left: 20px;
 }
+
+#sign p{margin-top: -37px;
+        margin-left: 60px;}
+ 
+ #sign i{
+    font-size: 24px;
+ }       
 
 #cart{
     
@@ -579,3 +554,19 @@ body {
        
       
  /* <------------------------------last div ends-----------------------------------> */
+
+
+ /* @media all and (min-width:768px) and (max-width:1024px){
+    
+    body{
+        background-color: aquamarine;
+    }
+ }
+
+
+ @media all and (min-width:320px) and (max-width:767px){
+
+   body{
+    background-color: #303AB2;
+   }
+ } */

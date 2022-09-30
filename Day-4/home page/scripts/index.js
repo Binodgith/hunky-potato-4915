@@ -206,5 +206,18 @@ container.addEventListener("search",()=>{
 });
 
 
+let user = JSON.parse(localStorage.getItem("User")) || [];
+
+let login_div=document.getElementById("sign");
+
+
+if(user===undefined)
+{
+   document.getElementById("sign_up").style.visibility="hidden";
+}
+else{
+    document.getElementById("user_icon").style.visibility="hidden";
+}
+
 
   

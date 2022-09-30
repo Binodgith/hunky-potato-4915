@@ -209,7 +209,7 @@ let bottom_navbar = () =>{
 </div>
 
 <div id="more"><h4>More |</h4></div>
-<div id="sign"><h4>Sign Up / Sign In</h4></div>
+<div id="sign"><h4 id="sign_up">Sign Up / Sign In</h4><p id="user_icon"><i class="fa-regular fa-user"></i></p></div>
 <div id="cart"><span><i class="fa-regular fa-heart"></i></span></div>
 <div id="cart"><span><img src="https://img.icons8.com/windows/344/shopping-bag.png" alt=" cart logo"></span></div>
     `
