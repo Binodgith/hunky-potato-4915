@@ -341,9 +341,7 @@ let men_data = [
         let div = document.createElement('div');
         div.setAttribute('class' ,'prod_div')
 
-        div.addEventListener('click' , function(){
-            cartData(el);
-        })
+        
         
         div.onmouseover = function(el){
           
@@ -422,6 +420,11 @@ let men_data = [
         let basketBtn = document.createElement('button');
         basketBtn.innerText = "ADD TO BASKET"
         basketBtn.setAttribute('class', 'addToBasket');
+         
+        basketBtn.addEventListener('click' , function(){
+          cartData(el);
+      })
+
 
         basketBtn_div.append(basketBtn);
 
