@@ -34,109 +34,112 @@
        border: 1px solid rgb(219, 213, 213);
        padding: 25px 0px 20px 12px;
    }
-   #pincodeDiv>input{
+   #pincodeDiv>.rem>input{
        padding:10px 14px 10px 10px;
        border-radius:5px;
        border:1px solid rgb(211, 208, 208);
        margin-left:7%;
    }
-   #pincodeDiv>button {
+   #pincodeDiv>.rem>button {
        width:90px;
        height:37px;
        padding:8px 5px 9px 5px;
        margin-left:1%;
        border-radius:5px;
-       border:1px solid rgb(205, 216, 242);
+       border:1px solid rgb(147, 175, 241);
        background-color: transparent;
-       color:rgb(192, 207, 244);
+       color:rgb(102, 136, 220);
        font-size: 15px;
        
    }
+   #pincodeDiv>button:hover{
+    cursor:pointer;
+   }
    #offersForYouDiv{
-       height:105px;
+       height:auto;
        border:1px solid rgb(219, 213, 213);
        margin-top:2%;
-   }
-   #offersForYouDiv{
        display:flex;
-
    }
-   #offersForYouDiv>#offerImg{
-       width:30%;
-       border:0px solid black;
-       text-align: center;
+     #offersForYouDiv>#offerImg{
+        border:0px solid black;
        padding-top:20px;
    }
    #offersForYouDiv>#offerImg>img{
-       height:80%;
+       height:70px;
    }
    #offersForYouDiv>#offerInfo{
-       width:70%;
+       width:90%;
        border:0px solid black;
        padding:0px 0px 30px 10px;
        
    }
    #offersForYouDiv>#offerInfo>h3{
-       font-size: 17px;
+       font-size: 16px;
+       width:100%;
    }
-   #offersForYouDiv>#offerInfo>p{
-       font-size:15px;
-       width:90%;
-       color:rgb(126, 124, 124)
+   #offersForYouDiv>#offerInfo>div>p{
+       font-size:12px;
+       color:rgb(126, 124, 124);
+
    }
+   #offerInfo{
+        display:flex;
+ 
+   }
+     
    #SelectBtn{
-       position: absolute;
-       top:236px;
-       right:140px;
-       color:#303AB2;
-   }
+        margin-left:10px;
+        margin-top:10px;
+        color:#303AB2 
+    }
    #SelectBtn:hover{
        cursor:pointer;
    }
    #priceDiv{
        border: 1px solid rgb(219, 213, 213);
-       height:293px;
+       height:auto;
        margin-top:10px;
        padding:20px;
    }
+   
    #priceDiv>p{
        font-size: 15px;
    }
-   #priceDiv> .priceNumber1 {
-       position:absolute;
-       top:370px;
-       right:140px;
-       font-weight: 600;
-
+   #priceDiv1{
+    display:flex;
+    border:0px solid red
    }
-   #priceDiv> .priceNumber2 {
-       position:absolute;
-       top:405px;
-       right:140px;
-       font-weight: 600;
-
+   #priceDiv2{
+      width:40%;
+      border:0px solid red;
+      padding-top:10px;
+      text-align: right;
+      
    }
-   #priceDiv> .priceNumber3 {
-       position:absolute;
-       top:438px;
-       right:140px;
-       font-weight: 600;
-
+   #priceDivfirst{
+    border:0px solid red;
+    width:60%;
    }
+   #priceDiv2> span{
+       margin-bottom:50px;
+   }
+
    #priceRuler{
        background-color: rgb(205, 202, 202);
        height:1px;
        margin-top:30px;
    }
-   #priceDiv>#total{
-       font-size: 20px;
+
+   #totalCal{
+    display:flex;
+    font-weight: 600;
+    font-size: 18px;
+
    }
-   #priceDiv>#totalPrice{
-       position: absolute;
-       top:510px;
-       right:140px;
-       font-size: 20px;
-       font-weight: 600;
+   #totalCal>#totalPrice{
+    margin-left:300px;
+    margin-top:12px;
    }
    #priceDiv>#checkoutBtn{
        width:100%;
@@ -172,6 +175,7 @@
    #productDivPart1>p {
     margin-top:-1px;
     margin-left:10px;
+    
    }
    #productRuler{
 
@@ -183,4 +187,57 @@
    
   *{
     font-family: "Apple Color Emoji","Segoe UI Emoji";
+  }
+  #deliveryDate{
+    font-weight: 100;
+    font-size: 12px;    
+    margin-top:57px;
+    margin-left:12px
+    }
+  #remDiv{
+    display:flex;
+    border: 0px solid red;
+  }
+  #remDiv>#remBtn{
+    margin-left: 200px;
+    font-weight: 100;
+    color:#303AB2;
+    margin-top:55px;
+    font-size: 14px;
+  }
+  #remDiv>#remBtn:hover{
+    cursor:pointer;
+    
+  }
+  #deliveryIn{
+    font-weight: 100;
+    font-size: 13px ;
+    color: #a09d9d;
+    margin-top:55px;
+    margin-left:-190px;
+  }
+
+  .popup{
+    background : rgba(0,0,0,0.9);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup-content{
+    height:250px;
+    width:500px;
+    background-color: #5058af;
+    color:white;
+    padding:20px;
+    position: relative;
+
+  }
+  .applyBtn1, .applyBtn2{
+    color:black;
+    font-style:italic;
+    cursor:pointer
   }
