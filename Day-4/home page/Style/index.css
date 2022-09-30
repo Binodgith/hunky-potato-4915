@@ -8,6 +8,10 @@ body {
     line-height: 1.43;
     background-color: #FFFFFF;}
 
+    body a{
+        text-decoration: none;
+    }
+
 
                 /* <--------------------------top navbar start------------------------> */
     
@@ -77,6 +81,139 @@ body {
        /* <---------------------------------top navbar ends---------------------------> */
       
    /* <---------------------------------bottom navbar starts----------------------> */
+
+  
+   /* .dropbtn {
+    
+     color:black;
+     margin-top: 20px;
+     background-color: white;
+     font-size: 14px;
+     border: none;
+   }
+   
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f1f1f1;
+     min-width: 1000px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   } */
+   
+   /* .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   
+   
+   .dropdown:hover .dropdown-content {display: block;}
+    */
+  
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      
+      
+      
+      .dropdown {
+        float: left;
+        /* overflow: hidden; */
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 14px;  
+        border: none;
+        outline: none;
+        color: rgb(8, 8, 8);
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin-top: 5px;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color:white;
+        color:black ;
+      }
+      
+      .dropdown-content {
+        display: none;
+       
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        height: auto;
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+       
+      }
+      
+      /* .dropdown-content .header {
+        background: red;
+        padding: 16px;
+        color: white;
+      } */
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+       
+        width: 18%;
+        padding: 5px;
+        /* background-color: #ccc; */
+        height: auto;
+       
+      }
+      
+      .column a {
+        float: none;
+        color:gray;
+        padding: 5px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin-top: -7px;
+       font-size: 13px;
+      }
+      
+      .column a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+   
+
+
+
+
+
+
+   /* ================================================================================= */
 #bottom_navbar{
     width: 100%;
     height: 70px;
@@ -111,8 +248,13 @@ body {
     margin-left: 20px; 
 }
 
+/* #input{
+    background-color: #ecedeb;
+    height: 40px;
+
+} */
 #input_box{
-    margin-left: 20px; 
+    margin-left:30px; 
     width: 400px ;
     height: 40px;
     margin-top: 10px;
@@ -121,23 +263,43 @@ body {
     color: gray;
 }
 
+#input_box{
+    position: absolute;
+}
+
+#input:nth-last-child(){
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+#input i{
+    position: relative;
+    margin-top: 24px;
+    margin-left: 15px;
+}
+
 #more{
-    margin-left: 180px;
+    margin-left: 530px;
 }
 
 #sign{
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 #cart{
     
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 #cart img{
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+#cart i{
+    font-size: 25px;
+    margin-top: 18px;
 }
 
 /* <----------------------------------bottom navbar ends------------------------> */
@@ -294,10 +456,126 @@ body {
      
      #footer_div{
         width: 90%;
-        height: 100px;
-        border: 1px solid black;
+        height: auto;
+        /* border: 1px solid black; */
         margin-left: 50px;
+        display: flex;
 
      }
 
+     #sub1_footer{
+        display: flex;
+        width: 60%;
+        /* border: 1px solid ; */
+     }
+
+     .sup_sub{
+        width: 35%;
+        /* border: 1px solid ; */
+     }
+
+     .sml{
+        display: flex;
+     }
+
+     .sml i {
+        margin: 15px;
+         width:20px;
+         height: 30px;
+         font-size: 20px;
+     }
+
+     .sml div:nth-child(1){
+        border: 1px solid grey;
+        width: 50px;
+        height:50px;
+        align-content: center;
+        border-radius: 360px 360px 360px 360px;
+        margin-top: 20px;
+        align-items: center;
+     }
+
+     .sml div:nth-child(2){
+        margin-left: 13px;
+        margin-top: 20px;
+        padding-top: 7px;
+     }
+
+     .sml a{
+        color: gray;
+        text-decoration: none;
+        margin-top:-19px;
+
+     }
+
+     .sml p{
+        margin-top: -1px;
+     }
+     
+
+     #sub2_footer{
+        /* border: 1px solid black; */
+        display: flex;
+        width: 15%;
+        margin-left: 300px;
+
+     }
+
+     .social_icon{
+        /* border: 1px solid rgb(179, 25, 25); */
+        display: flex;
+        width: 20%;
+        padding: 10px;
+        margin-left: 10px;
+     }
+
+     #sub2_footer i{
+        font-size: 23px;
+        color: #000000;
+        margin-top: 35px;
+     }
+
  /* <----------------------------footer div ends -------------------------------> */
+
+ /* <---------------------------last div starts---------------------------------> */
+
+      #last_div{
+        width: 90%;
+        height: auto;
+        /* border: 1px solid rebeccapurple; */
+        display: flex;
+        margin-left: 50px;
+      }
+
+      #last_div img{
+        width: 80px;
+       margin-top: 25px;
+      }
+
+      #last_div div:nth-child(2){
+           /* border: 1px solid rebeccapurple; */
+           padding: 5px 5px 5px 5px ;
+      }
+
+      #last_div div:nth-child(1)
+      {
+        /* border: 1px solid rebeccapurple; */
+        margin-top: 5px;
+      }
+
+      #last_div a{
+        margin-left: 50px;
+        color: gray;
+        text-decoration: none;
+      }
+
+      #last_div p{
+        margin-left: 50px;
+        color: gray;
+      }
+     
+
+      
+       
+      
+ /* <------------------------------last div ends-----------------------------------> */
