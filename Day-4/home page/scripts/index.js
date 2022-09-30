@@ -200,13 +200,11 @@ let container=document.getElementById("input_box");
 
 container.addEventListener("search",()=>{
     let x=document.getElementById("input_box").value;
-    if(x=="dress")
-    {  
-        console.log("you are on product page");
-        window.location.href="#";
-
-    }
+       console.log("you are on product page");
+        window.location.href="";
     console.log('container: ',x);
-})
+});
+
+
 
   
