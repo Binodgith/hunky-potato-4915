@@ -36,7 +36,10 @@
         <div id="productsAmount">
 
             <div id="pincodeDiv">
-                <label for="">Deliver to</label><input id="pincodeInp" placeholder="Enter pincode" type="search" maxlength="6" accept="number"> <button id="checkBtn">Check</button>
+                <div class='rem'>
+                <label for="">Deliver to</label><input id="pincodeInp" placeholder="Enter pincode" type="search" maxlength="6"> <button id="checkBtn">Check</button>
+                </div>
+                <div id="pincodeAppend"></div>
             </div>
 
             <div id="offersForYouDiv">
@@ -44,28 +47,56 @@
                     <img src="https://www.maxfashion.in/static/icons/gift-box.png" alt="">
                 </div>
                 <div id="offerInfo">
-                    <h3>Offers for You!</h3><span id="SelectBtn">Select</span>
-                    <p>Choose and apply voucher in 2 simple steps</p>
+                    <div>
+                    <h3>Offers for You!</h3>
+                    <p id="appliedCoupon">Choose and apply voucher in 2 simple steps</p>
+                    </div>
+                    <span id="SelectBtn">Select</span>
                 </div>
             </div>
 
             <div id="priceDiv">
-                <p>Total MRP</p> <span class="priceNumber1">1</span>
-                <p>Offer discount</p> <span class="priceNumber2">2</span>
-                <p>Shipping charge</p> <span class="priceNumber3">Free</span>
-            
+                <div id="priceDiv1">
+                    <div id="priceDivfirst">
+                    <p>Total MRP</p>
+                    <p>Offer discount</p>
+                    <p>Shipping charge</p>
+                    </div>
+                    <div id="priceDiv2">
+                    <span class="priceNumber1"></span><br><br>
+                    <span class="priceNumber2"></span><br><br>
+                    <span class="priceNumber3">Free</span>
+                    </div>
+                </div>
                 <div id="priceRuler"></div>
+                <div id="totalCal">
                 <p id="total">Total</p> <span id="totalPrice">8</span>
+                </div>
                 <button id="checkoutBtn">Checkout now</button>
             
                 <div id="priceNote">
                     <p>Shipping charges might vary based on pincode delivery location</p>
                 </div>
+
+                
             </div>
         </div>
 
     </div>
 
+</div>
+<div class= 'popup'>
+    <div class="popup-content">
+        
+        <fieldset>
+        <legend><h3>Available coupons for you</h3></legend>
+        <p>Only two coupons are available for your Pincode </p>
+            <p><b> 1.</b> Get 10% discount <span class="applyBtn1">Apply</span></p>
+            <p> <b>2.</b> </b>Get 7% discount + hungama membership for 1 month <span class="applyBtn2">Apply</span></p>
+           
+        </fieldset>
+    
+    </div>
 </div>
     
 </body>
