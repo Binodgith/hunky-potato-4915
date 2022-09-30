@@ -1,4 +1,5 @@
 
+let data
 // let div2 = document.getElementsByClassName('basket_div');
 document.getElementById('dropdown-content1').style.display = 'none';
 document.getElementById('dropbtn1').addEventListener('click' , showSubMenu1);
@@ -339,6 +340,10 @@ let men_data = [
 
         let div = document.createElement('div');
         div.setAttribute('class' ,'prod_div')
+
+        div.addEventListener('click' , function(){
+            cartData(el);
+        })
         
         div.onmouseover = function(el){
           
@@ -490,4 +495,14 @@ let men_data = [
 
      function loadmore(){
       appendProducts (men_data2);
+     }
+
+     
+     function cartData(el){
+      data = JSON.parse(localStorage.getItem('cart'))|| [];
+      console.log(el)
+      data.push(el);
+      console.log(data);
+      localStorage.setItem('cart' , JSON.stringify(data));
+      
      }
