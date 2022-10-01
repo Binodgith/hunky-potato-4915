@@ -241,3 +241,35 @@
     font-style:italic;
     cursor:pointer
   }
+
+  @media only screen and (max-width: 650px){
+    
+  .hrRuler{
+    background-color:rgb(212, 208, 208);
+    height:1px;   
+   }
+   #cartBody{
+       width:100%;
+
+   }
+   
+   #productContentDiv{
+       display: inline;
+   }
+   #productContentDiv > #products{
+       width:98%;
+   }
+   #productContentDiv > #productsAmount{
+       width:98%; 
+       margin-left:0%;
+   }
+     #offersForYouDiv>#offerImg{
+       padding:20px;
+   }
+   #offersForYouDiv>#offerInfo{
+       width:90%;
+       border:0px solid black;
+       padding:0px 0px 30px 10px;
+       
+   }
+}
