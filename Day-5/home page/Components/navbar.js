@@ -252,7 +252,30 @@ let bottom_navbar = () =>{
 <div id="sign"><h4 id="sign_up">Sign Up / Sign In</h4><p id="user_icon"><i class="fa-regular fa-user"></i></p></div>
 <div id="cart"><span><i class="fa-regular fa-heart"></i></span></div>
 <div id="cart"><span><img src="https://img.icons8.com/windows/344/shopping-bag.png" alt=" cart logo"></span></div>
-    `
+
+
+
+
+
+
+ `
 }
 
 export {top_navbar , bottom_navbar};
+
+
+{/* <div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Kpf5lQ_01enwvEdx4jqx2rLmMfI_E0Id12TZJ02y&s" ></a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    
+  </div>
+  <a href="javascript:void(0);" class="icon" id="linksbar">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> */}
