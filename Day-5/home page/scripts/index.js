@@ -220,4 +220,18 @@ else{
 }
 
 
+
+let box=document.getElementById("linksbar");
+box.addEventListener("click",()=>{
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+}})
+
+  
+  
+
+
   
