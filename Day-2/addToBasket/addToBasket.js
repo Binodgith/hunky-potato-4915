@@ -56,8 +56,8 @@ data.forEach(function(el, index){
     let price = document.createElement('p');
     price.innerText = `₹${el.price}`;
 
-    console.log(productQuantity)
-    console.log(el.price * productQuantity)
+    // console.log(productQuantity)
+    // console.log(el.price * productQuantity)
 
 
     let deliveryDate = document.createElement('p');
@@ -128,16 +128,18 @@ data.forEach(function(el, index){
 
 appendData()
 
-let billObj = {}
+
 let newdata;
 let newSum = 0
+
+
 priceNumber1.append(`₹ ${sum}`)
-totalPrice.append(`${sum}`)
+totalPrice.append(`₹${sum}`)
 let val = (num, index) => {
     
     data.forEach( function(el, i){
     if (index == i){
-        newSum = el.price * num
+        newSum = el.price * (num-1)
         // priceNumber1.append(`₹ ${sum}`)
         console.log(newSum + sum)
         let full = newSum + sum
@@ -145,7 +147,7 @@ let val = (num, index) => {
         priceNumber1.append(`₹ ${full}`)
 
         totalPrice.innerHTML = null
-        totalPrice.append(full)
+        totalPrice.append(`₹${full}`)
 
         let applyBtn1 = document.querySelector('.applyBtn1').addEventListener("click", function(){
             discount = Math.floor((10 * full)/100)
@@ -154,7 +156,7 @@ let val = (num, index) => {
             priceNumber2.append(`₹ ${discount}`)
         
             totalPrice.innerHTML = null
-            totalPrice.append(`${full-discount}`)
+            totalPrice.append(`₹${full-discount}`)
         applyDisc()
         
         })
@@ -165,7 +167,7 @@ let val = (num, index) => {
             
             priceNumber2.append(`₹ ${discount}`)
             totalPrice.innerHTML = null
-            totalPrice.append(`${full-discount}`)
+            totalPrice.append(`₹${full-discount}`)
         applyDisc()
         
         })
@@ -231,7 +233,7 @@ let applyBtn1 = document.querySelector('.applyBtn1').addEventListener("click", f
     priceNumber2.append(`₹ ${discount}`)
 
     totalPrice.innerHTML = null
-    totalPrice.append(`${sum-discount}`)
+    totalPrice.append(`₹${sum-discount}`)
 applyDisc()
 
 })
@@ -242,7 +244,7 @@ let applyBtn2 = document.querySelector('.applyBtn2').addEventListener("click", f
     
     priceNumber2.append(`₹ ${discount}`)
     totalPrice.innerHTML = null
-    totalPrice.append(`${sum-discount}`)
+    totalPrice.append(`₹${sum-discount}`)
 applyDisc()
 
 })
@@ -264,7 +266,7 @@ let checkoutBtn = document.getElementById('checkoutBtn')
 checkoutBtn.addEventListener('click', function(){
 
     localStorage.setItem('newProducts', JSON.stringify(data))
-        
+    location.href = '../billing/billing.html' 
 })
 
 
