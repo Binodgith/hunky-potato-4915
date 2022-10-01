@@ -17,13 +17,13 @@
             <div id="totalPart1">
                 <form action="">
                     <h3>Select your Payment Method:</h3>
-                    <input disabled=true type="radio"><label for="">NetBanking</label>
+                    <input disabled=true name='action' type="radio"><label for="">NetBanking</label>
                     <br><br>
-                    <input disabled=true type="radio"><label for="">UPI</label>
+                    <input disabled=true name='action' type="radio"><label for="">UPI</label>
                     <br><br>
-                    <input id="paymentInfo" type="radio"><label for="">Credit Card or Debit Card</label>
+                    <input id="paymentInfo" name='action' type="radio"><label for="">Credit Card or Debit Card</label>
                     <br><br>
-                    <input disabled=true type="radio"><label for="">Cash on Delivery</label>
+                    <input id="cod" name='action' type="radio"><label for="">Cash on Delivery</label>
                     
                 </form>
                 
@@ -34,7 +34,8 @@
                     </div>
                 </div>
            </div> 
-        
+           <button id="placeOrder">Place Order</button><br>
+           
             <div id="paymentData">
 
                 <form action="">
@@ -46,9 +47,9 @@
                         <option value="">Visa</option>
                         <option value="">Rupay</option>
                     </Select><br>
-                    <label for="">Enter Your Card Number: </label><input type="Number"><br>                    
-                    <label for="">Expiry Date: </label> <input id="month" type="text"> /<input id="month" type="text"><br>
-                    <label for="">CVV:</label> <input id='cvv' type="number">
+                    <label for="">Enter Your Card Number: </label><input required type="Number"><br>                    
+                    <label for="">Expiry Date: </label> <input required id="month" type="text"> /<input required id="month" type="text"><br>
+                    <label for="">CVV:</label> <input required id='cvv' type="number">
                     <br>
                     <button id="confirm">Confirm</button><br>
                 </form>
@@ -62,7 +63,7 @@
             <div id='popupWindow'>
                 <img src="https://media.tenor.com/qM6fp_G04OwAAAAj/tick-tick-verified.gif" alt="">
                 <p>Order Successfully Placed</p>
-                <button id='goToHome'>Homepage</button>
+                <button id='goToHome'>Continue Shopping</button>
             </div>
         </div>
 

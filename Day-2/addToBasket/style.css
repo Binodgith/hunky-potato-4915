@@ -242,7 +242,7 @@
     cursor:pointer
   }
 
-  @media only screen and (max-width: 650px){
+  @media only screen and (max-width: 1000px){
     
   .hrRuler{
     background-color:rgb(212, 208, 208);

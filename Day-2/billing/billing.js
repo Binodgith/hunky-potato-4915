@@ -4,8 +4,10 @@ let paymentInfo = document.getElementById('paymentInfo');
 
 paymentInfo.addEventListener('click', function(){
    
+
     
     let paymentData = document.getElementById('paymentData')
+    placeOrder.style.display= 'none'
     paymentData.style.display= 'flex'
 
  })
@@ -30,14 +32,42 @@ paymentInfo.addEventListener('click', function(){
     showInfo.append(price)
  })
 
+ let paymentData = document.getElementById('paymentData')
+
+
  let confirm = document.getElementById('confirm')
  confirm.addEventListener('click', function(e){
     e.preventDefault()
+    
     let popUp = document.getElementById('popUp')
     popUp.style.display= 'flex'
+    let time = Date()
+    console.log(time)
+    localStorage.setItem('dispatchTime', JSON.stringify(time))
  })
 
  let goToHome = document.getElementById('goToHome')
  goToHome.addEventListener('click', function(){
     location.href = 'index.html'
  })
+
+ let placeOrder = document.getElementById('placeOrder')
+
+ let cod = document.getElementById('cod')
+ cod.addEventListener('click', function(){
+   paymentData.style.display= 'none'
+
+   placeOrder.style.display = 'flex'
+   
+ })
+
+placeOrder.addEventListener('click', function(e){
+
+   e.preventDefault()
+   
+    let popUp = document.getElementById('popUp')
+    popUp.style.display= 'flex'
+    let time = Date()
+    console.log(time)
+    localStorage.setItem('dispatchTime', JSON.stringify(time))
+})

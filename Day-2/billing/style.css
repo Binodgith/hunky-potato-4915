@@ -6,10 +6,13 @@
 #total{
     display: flex;
 }
+#totalPart1>form>label{
+    font-size: 18px
+}
 
 
  #total>fieldset{
-    background-color:rgb(155, 195, 236);
+    background-color:  #f7f8f792;
     /* background-image: linear-gradient(to right top, #e5eaf0, #cbcdd6, #b5afbb, #a1939e, #8d777f); */
     margin-left:8rem;
     width:80%;
@@ -94,6 +97,20 @@
   #goToHome{
     cursor:pointer;
     margin-top:1.5rem;
+  }
+  #placeOrder{
+    margin-top:1rem;
+    margin-left:3rem;
+    cursor:pointer;
+    border:none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color:#5058af;
+    color: white;
+    padding:8px;
+    display:none;
+  }
+  #placeOrder:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
   @media only screen and (max-width: 650px){
