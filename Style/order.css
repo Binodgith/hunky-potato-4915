@@ -1,0 +1,176 @@
+#order_page_heading{
+    width: 90%;
+    margin: auto;
+}
+#order_items{
+    width: 100%;
+    height:600px ;
+    background-color: ghostwhite;
+    overflow-y: auto;
+    padding: 5px 20px;
+    font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+#order_items>.order_box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 209, 209);
+    box-shadow: 1px 2px 4px rgb(199, 197, 197);
+    gap: 10px;
+}
+#order_items>.order_box>div img{
+    width: 10vw;
+}
+#order_items>.order_box>div h3{
+    font-size: 17px;
+}
+#order_items>.order_box>div p{
+    font-size: 15px;
+    color: rgb(68, 68, 68);
+}
+#order_items>.order_box>div:nth-child(3) p{
+    color: #2b3ade;
+    font-weight: 700;
+}
+#order_items>.order_box>div:nth-child(4) h4{
+    font-size: 18px;
+}
+#order_items>.order_box>div:nth-child(4) button{
+    font-size: 15px;
+    width: 100%;
+    background-color: #4049ad;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+#order_items>.order_box>div:nth-child(4) button:nth-child(3){
+    font-size: 15px;
+    width: 100%;
+    background-color: gray;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#confirm_cancel{
+    width: 40%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 50px gray;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    visibility: hidden;
+}
+#confirm_cancel>button{
+    float: right;
+}
+#confirm_cancel>button:nth-child(4){
+    font-size: 15px;
+    background-color: #4049ad;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* margin: 10px 0px; */
+}
+#confirm_cancel>button:nth-child(3){
+    font-size: 15px;
+    background-color: gray;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+@media all and (min-width:650px) and (max-width:900px){
+    #order_items{
+        padding: 5px 10px;
+    }
+    #order_items>.order_box>div img{
+        width: 7vw;
+    }
+    #order_items>.order_box>div h3{
+        font-size: 15px;
+    }
+    #order_items>.order_box>div p{
+        font-size: 13px;
+    }
+    #order_items>.order_box>div:nth-child(4) h4{
+        font-size: 14px;
+    }
+    #order_items>.order_box>div:nth-child(4) button{
+        font-size: 12px;
+        padding: 5px;
+    }
+    #order_items>.order_box>div:nth-child(4) button:nth-child(3){
+        font-size: 12px;
+        padding: 5px;
+    }
+    #confirm_cancel{
+        width: 80%;
+    }
+}
+
+@media all and (min-width:200px) and (max-width:649px){
+    #order_items>.order_box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    
+    }
+    #order_items>.order_box>div:nth-child(4){
+        /* margin: auto; */
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        grid-area: 2/1/3/4;
+
+    }
+    #order_items{
+        padding: 5px 10px;
+        height: 800px;
+    }
+    #order_items>.order_box>div img{
+        width: 100%;
+    }
+    #order_items>.order_box>div h3{
+        font-size: 13px;
+    }
+    #order_items>.order_box>div p{
+        font-size: 12px;
+    }
+    #order_items>.order_box>div:nth-child(4) h4{
+        font-size: 14px;
+    }
+    #order_items>.order_box>div:nth-child(4) button{
+        font-size: 11px;
+        padding: 7px;
+        width: 20%;
+    }
+    #order_items>.order_box>div:nth-child(4) button:nth-child(3){
+        font-size: 12px;
+        padding: 7px;
+        width: 20%;
+    }
+    #confirm_cancel{
+        width: 80%;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-16x16.png" sizes="16x16">
+    <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="style/signin.css">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Cart || Max</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav_append"></div>
+
+    <div id="signin_popup"></div>
+    
+    <div id="navbar"></div>
+    
+    <!-- Cart Body Margin -->
+    
+    <div id="cartBody">
+
+
+    <!-- Cart Top Content -->
+    <div>
+        <h2>Your Shopping Basket</h2>
+    </div>
+    <div class="hrRuler"></div>
+
+    <div class="countDiv"> <p><span id="countProducts"></span> Products</p></div>
+
+    <!-- Cart Product and amount Section -->
+
+    <div id="productContentDiv">
+
+        <!-- all products list (left section)-->
+
+        <div id='products'></div>
+
+        <!-- calculation and stuff (right section) -->
+
+        <div id="productsAmount">
+
+            <div id="pincodeDiv">
+                <div class='rem'>
+                <label for="">Deliver to</label><input id="pincodeInp" placeholder="Enter pincode" type="search" maxlength="6"> <button id="checkBtn">Check</button>
+                </div>
+                <div id="pincodeAppend"></div>
+            </div>
+
+            <div id="offersForYouDiv">
+                <div id="offerImg">
+                    <img src="https://www.maxfashion.in/static/icons/gift-box.png" alt="">
+                </div>
+                <div id="offerInfo">
+                    <div>
+                    <h3>Offers for You!</h3>
+                    <p id="appliedCoupon">Choose and apply voucher in 2 simple steps</p>
+                </div>
+                <span id="SelectBtn">Select</span>
+            </div>
+        </div>
+
+            <div id="priceDiv">
+                <div id="priceDiv1">
+                    <div id="priceDivfirst">
+                    <p>Total MRP</p>
+                    <p>Offer discount</p>
+                    <p>Shipping charge</p>
+                    </div>
+                    <div id="priceDiv2">
+                    <span class="priceNumber1"></span><br><br>
+                    <span class="priceNumber2"></span><br><br>
+                    <span class="priceNumber3">Free</span>
+                    </div>
+                </div>
+                <div id="priceRuler"></div>
+                <div id="totalCal">
+                <p id="total">Total</p> <span id="totalPrice"></span>
+                </div>
+                <button id="checkoutBtn">Checkout now</button>
+            
+                <div id="priceNote">
+                    <p>Shipping charges might vary based on pincode delivery location</p>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class= 'popup'>
+    <div class="popup-content">
+        
+        <fieldset>
+        <legend><h3>Available coupons for you</h3></legend>
+        <p>Only two coupons are available for your Pincode </p>
+            <p><b> 1.</b> Get 10% discount <span class="applyBtn1">Apply</span></p>
+            <p> <b>2.</b> </b>Get 7% discount + hungama membership for 1 month <span class="applyBtn2">Apply</span></p>
+           
+        </fieldset>
+    
+    </div>
+</div>
+
+<div id="foot_append"></div>
+</body>
+</html>
+<script src="scripts/addToBasket.js"></script>
+<script src="components/signin_page.js"></script>
+<script src="scripts/navbar.js" type="module"></script>

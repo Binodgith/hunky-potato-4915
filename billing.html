@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-16x16.png" sizes="16x16">
+    <title>Document</title>
+    <title>Secure Payment by Max </title>
+    <link rel="stylesheet" href="style/billing.css">
+</head>
+<body>
+    
+        <div id="total">
+            <fieldset>
+            <legend><h1>Bill Payment</h1></legend>
+            <div id="totalPart">
+                
+            <div id="totalPart1">
+                <form action="">
+                    <h3>Select your Payment Method:</h3>
+                    <input disabled=true name='action' type="radio"><label for="">NetBanking</label>
+                    <br><br>
+                    <input disabled=true name='action' type="radio"><label for="">UPI</label>
+                    <br><br>
+                    <input id="paymentInfo" name='action' type="radio"><label for="">Credit Card or Debit Card</label>
+                    <br><br>
+                    <input id="cod" name='action' type="radio"><label for="">Cash on Delivery</label>
+                    
+                </form>
+                
+            </div>
+                <div id="totalPart2">
+                    <div>
+                        <label>Total Price :<span id="showInfo"></span><label>
+                    </div>
+                </div>
+           </div> 
+           <button id="placeOrder">Place Order</button><br>
+           
+            <div id="paymentData">
+
+                <form action="">
+                    <Select>
+                        <option value="">Select Your Card Type</option>
+                        <option value="">Credit Card</option>
+                        <option value="">Debit Card</option>
+                        <option value="">Master Card</option>
+                        <option value="">Visa</option>
+                        <option value="">Rupay</option>
+                    </Select><br>
+                    <label for="">Enter Your Card Number: </label><input required type="Number"><br>                    
+                    <label for="">Expiry Date: </label> <input required id="month" type="text"> /<input required id="month" type="text"><br>
+                    <label for="">CVV:</label> <input required id='cvv' type="number">
+                    <br>
+                    <button id="confirm">Confirm</button><br>
+                </form>
+
+                
+            </div>  
+        
+        </fieldset>
+        </div>
+        <div id="popUp">
+            <div id='popupWindow'>
+                <img src="https://media.tenor.com/qM6fp_G04OwAAAAj/tick-tick-verified.gif" alt="">
+                <p>Order Successfully Placed</p>
+                <button id='goToHome'>Continue Shopping</button>
+            </div>
+        </div>
+
+    
+    
+</body>
+</html>
+<script src="scripts/billing.js"></script>
