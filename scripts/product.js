@@ -106,6 +106,7 @@ document.getElementById('dropdown-content').style.display = 'none';
 document.getElementById('dropbtn').addEventListener('click' , showSubMenu);
 
 
+
 function showSubMenu (){
   console.log("hello");
   let submenu = document.getElementById('dropdown-content');
@@ -116,6 +117,7 @@ function showSubMenu (){
     submenu.style.display = 'none'
   }
 }
+
 
 let men_data = [
    
@@ -464,6 +466,7 @@ let men_data = [
     
   });
        console.log(men_data);
+       container.innerHTML = null;
        appendProducts(men_data);
     
      
@@ -478,6 +481,7 @@ let men_data = [
     
   });
        console.log(men_data);
+       container.innerHTML = null;
        appendProducts(men_data);
     
      
@@ -497,6 +501,7 @@ let men_data = [
       return 0;
   })
        console.log(men_data);
+       container.innerHTML = null;
        appendProducts(men_data);
     
      
